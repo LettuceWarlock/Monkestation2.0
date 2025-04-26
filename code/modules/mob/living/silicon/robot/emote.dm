@@ -74,3 +74,10 @@
 	message = "activates their slow clap processor."
 	emote_type = EMOTE_AUDIBLE
 	sound = 'sound/machines/slowclap.ogg'
+
+/datum/emote/silicon/loudboom //Monkeystation addition
+	key = "boom"
+	message = "plays a loud boom."
+	emote_type = EMOTE_AUDIBLE
+	sound = 'monkestation/sound/effects/loudboom.ogg'
+	cooldown = 2 SECONDS
