@@ -75,7 +75,7 @@
 	emote_type = EMOTE_AUDIBLE
 	sound = 'sound/machines/slowclap.ogg'
 
-/datum/emote/silicon/loudboom //Monkeystation addition
+/datum/emote/silicon/loudboom
 	key = "boom"
 	message = "plays a loud boom."
 	emote_type = EMOTE_AUDIBLE
