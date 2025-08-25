@@ -13,7 +13,9 @@
 ///Conduction of heat near the external cooling loop
 #define HIGH_EFFICIENCY_CONDUCTIVITY 0.975
 ///Sets the minimum amount of power the machine uses
-#define MIN_POWER_USAGE 50000
+#define HYPERTORUS_MIN_POWER_USAGE 20000
+///Sets the amount of power the HFR uses per power level
+#define HYPERTORUS_STAGE_POWER_USAGE 50000
 ///Sets the multiplier for the damage
 #define DAMAGE_CAP_MULTIPLIER 0.005
 ///Sets the range of the hallucinations

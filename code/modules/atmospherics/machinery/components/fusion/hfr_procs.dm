@@ -253,7 +253,7 @@
 	if(machine_stat & (NOPOWER|BROKEN))
 		return FALSE
 	if(use_power == ACTIVE_POWER_USE)
-		update_mode_power_usage(ACTIVE_POWER_USE, (power_level + 1) * MIN_POWER_USAGE) //Max around 350 KW
+		update_mode_power_usage(ACTIVE_POWER_USE, HYPERTORUS_MIN_POWER_USAGE + (power_level * HYPERTORUS_STAGE_POWER_USAGE * (1 - clamp((1 - selected_fuel?.temperature_change_multiplier) * 2, 0, 0.9 )))) //Makes the power requirement scale with the fuel's maximum temperature
 
 	return TRUE
 
